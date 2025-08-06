@@ -170,6 +170,10 @@ body {
     display: flex;
     justify-content: space-between;
     width: 100%;
+    gap: 38px;
+    margin-left:-5px ;
+    
+    
 }
 
 
@@ -179,6 +183,7 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     transition: 0.5s;
     margin-top: 300px;
+    
 
 }
 
@@ -189,7 +194,7 @@ body {
     font-size: 18px;
     display: flex;
     align-items: center;
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 600;
     transition: 0.5s;
 }
@@ -954,3 +959,81 @@ form button:hover {
 }
 
 
+/* Adicione ao final do seu style.css */
+
+/* Para telas até 600px (smartphones) */
+@media (max-width: 600px) {
+    
+   body {
+    display: flex;
+    flex-direction: column;
+   }
+
+
+    .container-botoes-index {
+        background-image: url(./assets/botoes-media.png);
+        background-size: cover;
+        height:715px;
+        
+    }
+
+.agenda-ensaio i {
+    font-size: 30px;
+    margin-top: -300px;
+    
+}
+
+
+.agenda-ensaio {
+    
+    position: absolute; 
+    display: flex;
+    align-items: center; 
+    gap: 8px; 
+    font-size: 20px; 
+    color: var(--text-color);
+    text-decoration: none;
+    transition: 0.5s;
+    border-radius: 5px;
+    z-index: 1000;
+    
+}
+
+.whats-txt {
+    
+    margin-top: -300px;
+    margin
+    
+    
+}
+
+    
+  
+
+    .menu-botoes ul {
+        
+        flex-direction: column;
+        
+        align-items: center;
+        
+        justify-content: center;
+        
+        gap: 125px; 
+
+        margin-top: 83px;
+
+        margin-left: -200px;
+        
+      
+    }
+
+    /* Remove a margem superior de 300px dos itens <li> */
+    .menu-botoes ul li {
+        margin-top: 0;
+    }
+
+    /* Ajusta o tamanho da fonte para melhor visualização */
+    .menu-botoes ul li a {
+        font-size: 24px; /* Ajuste para um tamanho mais adequado para o mobile */
+    }
+}
