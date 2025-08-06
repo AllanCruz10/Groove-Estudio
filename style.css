@@ -966,15 +966,14 @@ form button:hover {
     padding: 0;
     min-height: 100vh;
     overflow-x: hidden;
+    overflow-y: hidden;   /* esconde o scroll vertical */
   }
   body {
     display: flex;
     flex-direction: column;
   }
   /* faz o main empurrar o footer lá pra baixo */
-  main {
-    flex: 1;
-  }
+ 
 
   .logo {
     height: auto;
@@ -1032,7 +1031,7 @@ form button:hover {
   list-style: none;
   width: 100%;
   margin-top: 65px;
-  margin-left: -245px;
+  margin-left: -240px;
 }
 .menu-botoes ul li {
   margin: 0;
@@ -1047,7 +1046,12 @@ form button:hover {
 }
 
 .footer-index {
-    
+    margin-top:-10px;
+    z-index: 1001;
+}
+
+footer.footer-index {
+  flex-shrink: 0; /* garante que não seja encolhido */
 }
 
 }
