@@ -972,7 +972,7 @@ form button:hover {
 
 
     .container-botoes-index {
-        background-image: url(./assets/botoes-media3.png);
+        background-image: url(./assets/botoes-media.png);
         background-size: cover;
         height:715px;
         
@@ -1020,7 +1020,7 @@ form button:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 100px;                  /* ajusta o espaçamento entre itens */
+    gap: 105px;                  /* ajusta o espaçamento entre itens */
     margin: 20px 0 0 0;         /* só margem de cima */
     padding: 0;                 /* zera padding */
     list-style: none;
@@ -1039,5 +1039,6 @@ form button:hover {
     text-align: center;
     font-size: 24px;
     padding: 12px 0;            /* área clicável maior */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.732);
   }
 }
