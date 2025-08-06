@@ -963,6 +963,9 @@ form button:hover {
 
 /* Para telas até 600px (smartphones) */
 @media (max-width: 600px) {
+
+
+
     
    body {
     display: flex;
@@ -970,62 +973,49 @@ form button:hover {
     overflow-x: hidden; 
    }
 
-
+  
     .container-botoes-index {
-        background-image: url(./assets/botoes-media.png);
         background-size: contain;
-        height:680px;
+        background-repeat: no-repeat;
+        width: 600px;
+        height: 230px;
         
     }
 
-.agenda-ensaio i {
-    font-size: 30px;
-    margin-top: -300px;
-    
-}
-
-
 .agenda-ensaio {
-    
-    position: absolute; 
-    display: flex;
-    align-items: center; 
-    gap: 8px; 
-    font-size: 20px; 
-    color: var(--text-color);
-    text-decoration: none;
-    transition: 0.5s;
-    border-radius: 5px;
+    position: absolute;
+    top: 200px;                /* 20px abaixo do topo */
+    right: 20px;              /* 20px da direita */
+    margin: 0;                /* zera margins antigas */
+    font-size: 18px;
+    gap: 6px;
     z-index: 1000;
-    
+  }
+  .agenda-ensaio i {
+    font-size: 28px;
+  }
 }
 
-.whats-txt {
-    
-    margin-top: -300px;
-    
-    
-}
+
 
     
   
  .menu-botoes {
-    width: 100% !important;
-    margin: 0 !important;       /* zera qualquer deslocamento */
+         /* zera qualquer deslocamento */
     padding: 0 10px;            /* espaçamento lateral */
     box-sizing: border-box;
   }
 
   .menu-botoes ul {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    gap: 90px;                  /* ajusta o espaçamento entre itens */
+    gap: 25px;                  /* ajusta o espaçamento entre itens */
     margin: 20px 0 0 0;         /* só margem de cima */
     padding: 0;                 /* zera padding */
     list-style: none;
     width: 100%;
     margin-top:60px;
+    margin-left: -235px;
   }
 
   .menu-botoes ul li {
@@ -1037,9 +1027,9 @@ form button:hover {
     display: block;
     width: 100%;
     text-align: center;
-    font-size: 20px;
+    font-size: 13px;
     padding: 12px 0;            /* área clicável maior */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    color: var(--text-color);
+    
   }
-}
+
