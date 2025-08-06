@@ -973,8 +973,8 @@ form button:hover {
 
     .container-botoes-index {
         background-image: url(./assets/botoes-media.png);
-        background-size: cover;
-        height:715px;
+        background-size: contain;
+        height:680px;
         
     }
 
@@ -1020,12 +1020,12 @@ form button:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 105px;                  /* ajusta o espaçamento entre itens */
+    gap: 90px;                  /* ajusta o espaçamento entre itens */
     margin: 20px 0 0 0;         /* só margem de cima */
     padding: 0;                 /* zera padding */
     list-style: none;
     width: 100%;
-    margin-top: 70px;
+    margin-top:60px;
   }
 
   .menu-botoes ul li {
@@ -1037,8 +1037,9 @@ form button:hover {
     display: block;
     width: 100%;
     text-align: center;
-    font-size: 24px;
+    font-size: 20px;
     padding: 12px 0;            /* área clicável maior */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    color: var(--text-color);
   }
 }
