@@ -967,6 +967,7 @@ form button:hover {
    body {
     display: flex;
     flex-direction: column;
+    overflow-x: hidden; 
    }
 
 
@@ -1008,31 +1009,35 @@ form button:hover {
 
     
   
+ .menu-botoes {
+    width: 100% !important;
+    margin: 0 !important;       /* zera qualquer deslocamento */
+    padding: 0 10px;            /* espaçamento lateral */
+    box-sizing: border-box;
+  }
 
-    .menu-botoes ul {
-        
-        flex-direction: column;
-        
-        align-items: center;
-        
-        justify-content: center;
-        
-        gap: 125px; 
+  .menu-botoes ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;                  /* ajusta o espaçamento entre itens */
+    margin: 20px 0 0 0;         /* só margem de cima */
+    padding: 0;                 /* zera padding */
+    list-style: none;
+    width: 100%;
+    margin-top: 70px;
+  }
 
-        margin-top: 83px;
+  .menu-botoes ul li {
+    width: 100%;
+    margin: 0;                  /* zera margin-top antiga */
+  }
 
-        margin-left: -200px;
-        
-      
-    }
-
-    /* Remove a margem superior de 300px dos itens <li> */
-    .menu-botoes ul li {
-        margin-top: 0;
-    }
-
-    /* Ajusta o tamanho da fonte para melhor visualização */
-    .menu-botoes ul li a {
-        font-size: 24px; /* Ajuste para um tamanho mais adequado para o mobile */
-    }
+  .menu-botoes ul li a {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 24px;
+    padding: 12px 0;            /* área clicável maior */
+  }
 }
