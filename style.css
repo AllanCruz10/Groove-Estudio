@@ -959,77 +959,95 @@ form button:hover {
 }
 
 
-/* Adicione ao final do seu style.css */
-
-/* Para telas até 600px (smartphones) */
 @media (max-width: 600px) {
-
-
-
-    
-   body {
+  /* garante que o body ocupe toda a altura e não crie scroll horizontal */
+  html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+  body {
     display: flex;
     flex-direction: column;
-    overflow-x: hidden; 
-   }
+  }
+  /* faz o main empurrar o footer lá pra baixo */
+  main {
+    flex: 1;
+  }
 
-  
-    .container-botoes-index {
-        background-size: contain;
-        background-repeat: no-repeat;
-        width: 600px;
-        height: 230px;
-        
-    }
+  .logo {
+    height: auto;
+    width: 250px;
+    margin-top: 5px;
+  }
 
-.agenda-ensaio {
-    position: absolute;
-    top: 200px;                /* 20px abaixo do topo */
-    right: 20px;              /* 20px da direita */
-    margin: 0;                /* zera margins antigas */
-    font-size: 18px;
+
+
+  /* header e botão de agendar */
+  .container-header-index {
+    height: 240px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .agenda-ensaio {
+    position:fixed;
+    top: 200px;
+    right: 20px;
+    display: flex;
+    align-items: center;
     gap: 6px;
+    font-size: 18px;
+    color: var(--text-color);
     z-index: 1000;
+    margin: 0;
   }
   .agenda-ensaio i {
     font-size: 28px;
   }
+
+  /* container de botões “índice” */
+  .container-botoes-index {
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    
+    
+    
+  }
+
+ .menu-botoes {
+  width: 100%;
+  padding: 0 16px;
+  box-sizing: border-box;
+}
+.menu-botoes ul {
+  display: flex;
+  justify-content: center;  /* centraliza em horizontal */
+  gap: 6px;                 /* aproxima os itens */
+  padding: 0;
+  list-style: none;
+  width: 100%;
+  margin-top: 65px;
+  margin-left: -245px;
+}
+.menu-botoes ul li {
+  margin: 0;
+}
+.menu-botoes ul li a {
+  display: block;
+  text-align: center;
+  font-size: 13px;
+  padding: 8px 12px;        /* área de clique confortável */
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+  color: var(--text-color);
 }
 
-
-
+.footer-index {
     
-  
- .menu-botoes {
-         /* zera qualquer deslocamento */
-    padding: 0 10px;            /* espaçamento lateral */
-    box-sizing: border-box;
-  }
+}
 
-  .menu-botoes ul {
-    display: flex;
-    align-items: center;
-    gap: 25px;                  /* ajusta o espaçamento entre itens */
-    margin: 20px 0 0 0;         /* só margem de cima */
-    padding: 0;                 /* zera padding */
-    list-style: none;
-    width: 100%;
-    margin-top:60px;
-    margin-left: -235px;
-  }
-
-  .menu-botoes ul li {
-    width: 100%;
-    margin: 0;                  /* zera margin-top antiga */
-  }
-
-  .menu-botoes ul li a {
-    display: block;
-    width: 100%;
-    text-align: center;
-    font-size: 13px;
-    padding: 12px 0;            /* área clicável maior */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    
-  }
-
+}
