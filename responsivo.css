@@ -15,16 +15,17 @@
     flex-direction: column;       /* empilha logo e bloco da direita */
     align-items: flex-start;      /* mantém alinhado à esquerda */
     gap: 0px;
-    height: 20rem;
+    height: 19rem;
     padding-left: 5.5rem;
-    padding-bottom: 2rem;
-    margin-top: -40px;
+    padding-bottom: 8rem;
+    
     
   }
 
   .logo {
     width: 16rem;
     height: auto;
+    
     
   }
 
@@ -40,7 +41,7 @@
   }
 
   .social-container-header {
-    justify-content: flex-start;
+    display: none;
     
   }
 }
@@ -50,7 +51,7 @@
   
   /* BOTÃO MENU + OFFCANVAS */
   .botao-menu {
-    top: 75px;            /* desce um pouco por causa do header */
+    top: 95px;            /* desce um pouco por causa do header */
     left: 12px;
     font-size: 20px;
     padding: 8px 12px;
