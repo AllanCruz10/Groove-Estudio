@@ -8,7 +8,7 @@
   }
 
   /* HEADER */
-  header { height: auto; }
+  header { height: 280px; }
 
 
   .container-header-index {
@@ -32,13 +32,12 @@
   .right-header {
     flex-direction: column;       /* agenda e redes na vertical */
     padding: 0; 
-    margin-top: -100px;          
+    margin-top: -60px;          
     
   }
 
-  .container-agenda a {
-    justify-content: flex-start;  /* mantém texto à esquerda */
-  }
+
+  
 
   .social-container-header {
     display: none;
@@ -61,7 +60,7 @@
 
   .menu-lateral {
     left: -80vw;          /* sai 80% da tela */
-    width: 80vw;          /* ocupa 80% da largura */
+    width: 60vw;          /* ocupa 80% da largura */
     max-width: 320px;
     z-index: 1200;
   }
@@ -70,7 +69,7 @@
   .menu-lateral ul { margin-top: 0; }
   .menu-lateral ul li { padding: 14px 20px; }
   .menu-lateral ul li a { font-size: 16px; }
-  .logo-menu { width: 150px; margin: 12px auto 0; }
+  .logo-menu { width: 150px; margin: 12px auto 0;}
 
   .background {
     z-index: 1150;     /* acima do conteúdo, abaixo do menu */
