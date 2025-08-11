@@ -10,29 +10,47 @@
   /* HEADER */
   header { height: auto; }
 
-  .logo {
-    height: auto;
-    width: 20rem;
-    padding-left: 4.5rem;
+
+  .container-header-index {
+    flex-direction: column;       /* empilha logo e bloco da direita */
+    align-items: flex-start;      /* mantém alinhado à esquerda */
+    gap: 0px;
+    height: 20rem;
+    padding-left: 5.5rem;
+    padding-bottom: 2rem;
+    margin-top: -40px;
+    
   }
 
- 
-  .container-agenda a {7
-    padding-right:20rem;
-    gap: 6px;
-    border-radius: 1.2rem;
+  .logo {
+    width: 16rem;
+    height: auto;
+    
   }
-  .container-agenda i { font-size: 20px; }
-  .container-agenda span { font-size: 0.95rem; }
+
+  .right-header {
+    flex-direction: column;       /* agenda e redes na vertical */
+    padding: 0; 
+    margin-top: -100px;          
+    
+  }
+
+  .container-agenda a {
+    justify-content: flex-start;  /* mantém texto à esquerda */
+  }
 
   .social-container-header {
-    gap: 14px;
-    font-size: 18px;
+    justify-content: flex-start;
+    
   }
+}
 
+
+ 
+  
   /* BOTÃO MENU + OFFCANVAS */
   .botao-menu {
-    top: 90px;            /* desce um pouco por causa do header */
+    top: 75px;            /* desce um pouco por causa do header */
     left: 12px;
     font-size: 20px;
     padding: 8px 12px;
@@ -139,6 +157,6 @@
     text-align: center;
     padding: 4px 12px;
   }
-}
+
 
 
