@@ -7,6 +7,13 @@
     overflow-x: hidden;        /* evita scroll lateral */
   }
 
+   .body-index {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    overflow-y: hidden;        /* evita scroll lateral */
+  }
+
   /* HEADER */
   header { height: 280px; }
 
@@ -60,6 +67,7 @@
   }
   .botao-menu.ativo { left: calc(80vw - 40px); } /* acompanha a largura do menu quando aberto */
 
+
   .menu-lateral {
     left: -80vw;          /* sai 80% da tela */
     width: 60vw;          /* ocupa 80% da largura */
@@ -68,20 +76,22 @@
   }
   .menu-lateral.ativo { left: 0; }
 
-  .menu-lateral ul { margin-top: 0; }
+  .menu-lateral ul { margin-top: 0; margin-left: 35px; }
   .menu-lateral ul li { padding: 14px 20px; }
   .menu-lateral ul li a { font-size: 16px; }
-  .logo-menu { width: 150px; margin: 12px auto 0;}
+  .logo-menu { width: 180px; margin:12px 0 0 35px;}
 
   .background {
     z-index: 1150;     /* acima do conteúdo, abaixo do menu */
     background-color: rgba(0,0,0,.5);
+
   }
 
   /* SEÇÃO BOTÕES DA HOME */
   .container-botoes-index {
-    height: 300px;                 /* reduz para caber no mobile */
-    background-size: cover;
+    height: 220px;                 /* reduz para caber no mobile */
+    background-size:160%;
+    background-repeat: no-repeat;
     background-position: center;   /* ajusta o foco da arte */
     padding: 0 12px;
   }
@@ -96,14 +106,15 @@
 
   /* Grade 2x2 para os 4 links */
   .menu-botoes ul {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0,1fr));
-    gap: 10px;
+    display:flex;
+    gap: 11px;
     width: 100%;
     max-width: 520px;
+    padding: 0 0 45px 0;
+    margin-right: 20px;
   }
 
-  .menu-botoes li { font-size: 18px; }
+  .menu-botoes li { font-size: 12px; }
   .menu-botoes a {
     justify-content: center;
     padding: 10px 8px;
