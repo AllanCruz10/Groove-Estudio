@@ -36,8 +36,10 @@
     
   }
 
-
-  
+  .container-agenda {
+  transform: scale(0.8); /* 90% do tamanho original */
+   /* mantém alinhado ao logo */
+  }
 
   .social-container-header {
     display: none;
