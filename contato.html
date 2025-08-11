@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" sizes="64x64" href="./assets/logo-sem-fundo.png">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./responsivo.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
         integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -15,21 +16,32 @@
 <body>
 
    <header>
+        <div class="container-header-producoes">
+            <div class="container-logo">
+                <a href="./index.html">
+                <img src="./assets/logo-sem-fundo.png" class="logo" />
+                </a>
+            </div>
 
-        <div class="container-header">
+            <div class="right-header-producoes">
+                <div class="container-agenda">
+                    <a href="https://wa.me/5511943568493?text=Olá%2C%20quero%20agendar%20um%20ensaio!">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <span>Agende seu ensaio</span>
+                    </a>
+                </div>
 
-        <a href="https://wa.me/5511943568493?text=Olá%2C%20quero%20agendar%20um%20ensaio!" class="agenda-ensaio">
-            <i class="fa-brands fa-whatsapp"></i>
-            <span class="whats-txt">Agende seu ensaio</span>
-        </a>
-
-        <a href="./index.html">
-            <img src="./assets/logo-sem-fundo.png" class="logoEstudio" />
-        </a>
+                <div class="social-container-header">
+                    <a href="#"><i id="insta" class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i id="face" class="fa-brands fa-square-facebook"></i></a>
+                    <a href="https://wa.me/5511943568493?text=Olá%2C%20quero%20agendar%20um%20ensaio!"><i id="whats"
+                            class="fa-brands fa-whatsapp"></i></a>
+                    <a href="#"><i id="spot" class="fa-brands fa-spotify"></i></a>
+                </div>
+            </div>
         </div>
-        <div class="faixa-header"></div>
-
     </header>
+
 
     <!--menu lateral-->
 
@@ -54,35 +66,32 @@
         </div>
     </nav>
 
-    <main class="main-producoes">
+    <div class="background"></div>
+
+<main class="main-producoes">
+
     
-        <div class="conteudo"></div>
-
-        <div class="background"></div>
-
-        <div class="hero-estudio">
-            <img src="./assets/contato-semfundo.png"/>
-        </div>
-
+    
     <div class="container-contato">
-    
+    <h1 class="titulo-groove">Estúdio Groove</h1>
 
     <div class="contact-info">
-      <p><strong>Endereço:</strong> Av. Alexandrina de Paula, 368 - Mogi das Cruzes, SP</p>
-      <p><strong>Telefone:</strong> (11) 93417-4728</p>
-      <p><strong>E-mail:</strong> contato@grooveestudio.com</p>
+    
+      <p><i class="fa-solid fa-location-dot"></i><strong>Endereço:</strong> Av. Alexandrina de Paula, 368 - Mogi das Cruzes, SP</p>
+      <p><i class="fa-solid fa-phone"></i><strong>Telefone:</strong> (11) 93417-4728</p>
+      <p><i class="fa-solid fa-at"></i><strong>E-mail:</strong> contato@grooveestudio.com</p>
     </div>
 
     <div class="content">
       <form id="contact-form">
         <label for="name">Nome:</label>
-        <input type="text" id="name" name="name" required>
+        <input type="text" id="name" name="name" required placeholder="Digite seu nome">
 
         <label for="email">E-mail:</label>
-        <input type="email" id="email" name="email" required>
+        <input type="email" id="email" name="email" required placeholder="Digite seu email">
 
         <label for="message">Mensagem:</label>
-        <textarea id="message" name="message" required></textarea>
+        <textarea id="message" name="message" required placeholder="Deixe sua mensagem"></textarea>
 
         <button type="submit">Enviar</button>
       </form>
@@ -100,22 +109,18 @@
     </div>
   </div>
 
-    <div class="faixa-contato"></div>
- <div class="container-botoes-contato">
-    <nav class="menu-botoes-contato">
-            <ul>
-                <li><a href="./producoes.html">Produções</a></li>
-                <li><a href="./estudio.html">O Estúdio</a></li>
-                <li><a href="./localizacao.html">Localização</a></li>
-                <li><a href="./contato.html">Contato</a></li>
-            </ul>
-        </nav>
-
-</div>
-
-
-
 </main>
+
+<div class="container-botoes-producoes">
+    <nav class="menu-botoes">
+        <ul>
+            <li><a href="./producoes.html">PRODUÇÕES</a></li>
+            <li><a href="./estudio.html">ESTÚDIO</a></li>
+            <li><a href="./localizacao.html">LOCALIZAÇÃO</a></li>
+            <li><a href="./contato.html">CONTATO</a></li>
+        </ul>
+    </nav>
+</div>
 
 <footer class="footer-contato">
 

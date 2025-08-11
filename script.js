@@ -1,6 +1,5 @@
 const botao = document.querySelector('.botao-menu');
 const menuLateral = document.querySelector('.menu-lateral');
-const conteudo = document.querySelector('.conteudo');
 const background = document.querySelector('.background');
 const logo = document.querySelector('.logo');
 const logoProducoes = document.querySelector('.logoProducoes');
@@ -11,7 +10,6 @@ const logoContato = document.querySelector('.logoContato');
 botao.addEventListener('click', () => {
     menuLateral.classList.toggle('ativo')
     botao.classList.toggle('ativo')
-    conteudo.classList.toggle('ativo')
     background.classList.toggle('ativo')
     document.body.style.backgroundColor = menuLateral.classList.contains('ativo') ? '#34495e' : '#ecf0f1'
     if (logo) logo.classList.toggle('ativo');
@@ -25,7 +23,6 @@ botao.addEventListener('click', () => {
 background.addEventListener('click', () => {
     menuLateral.classList.remove('ativo')
     botao.classList.remove('ativo')
-    conteudo.classList.remove('ativo')
     background.classList.remove('ativo')
     document.body.style.backgroundColor = '#ecf0f1'
     if (logo) logo.classList.remove('ativo');

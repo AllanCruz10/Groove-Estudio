@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" sizes="64x64" href="./assets/logo-sem-fundo.png">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./responsivo.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
         integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -15,20 +16,30 @@
 <body>
 
     <header>
+        <div class="container-header-producoes">
+            <div class="container-logo">
+                <a href="./index.html">
+                <img src="./assets/logo-sem-fundo.png" class="logo" />
+                </a>
+            </div>
 
-        <div class="container-header">
+            <div class="right-header-producoes">
+                <div class="container-agenda">
+                    <a href="https://wa.me/5511943568493?text=Olá%2C%20quero%20agendar%20um%20ensaio!">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <span>Agende seu ensaio</span>
+                    </a>
+                </div>
 
-        <a href="https://wa.me/5511943568493?text=Olá%2C%20quero%20agendar%20um%20ensaio!" class="agenda-ensaio">
-            <i class="fa-brands fa-whatsapp"></i>
-            <span class="whats-txt">Agende seu ensaio</span>
-        </a>
-
-        <a href="./index.html">
-            <img src="./assets/logo-sem-fundo.png" class="logoEstudio" />
-        </a>
+                <div class="social-container-header">
+                    <a href="#"><i id="insta" class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i id="face" class="fa-brands fa-square-facebook"></i></a>
+                    <a href="https://wa.me/5511943568493?text=Olá%2C%20quero%20agendar%20um%20ensaio!"><i id="whats"
+                            class="fa-brands fa-whatsapp"></i></a>
+                    <a href="#"><i id="spot" class="fa-brands fa-spotify"></i></a>
+                </div>
+            </div>
         </div>
-        <div class="faixa-header"></div>
-
     </header>
 
     <!--menu lateral-->
@@ -53,18 +64,16 @@
             <a href="#"><i id="spot" class="fa-brands fa-spotify"></i></a>
         </div>
     </nav>
-    <main class="main-producoes">
-    
-        <div class="conteudo"></div>
 
-        <div class="background"></div>
+    <div class="background"></div>
 
-        <div class="hero-estudio">
-            <img src="./assets/estudio-semfundo.png"/>
-        </div>
 
+<main class="main-estudio">
+
+ 
    <section class="sobre-estudio">
         
+        <h1 class="titulo-groove">Estúdio Groove</h1>
         <p class="descricao-sobre">
         Sob o comando de <b>Henrique Leopoldo</b>, o <b>Groove Estúdio</b> foi criado com o intuito de garantir uma acústica tratada de forma cuidadosa e gravação de alta qualidade para bandas e artista do alto tiete e região de SP.<br> Oferecemos serviços de gravação, mixagem e masterização, além de ensaios para bandas e artistas solo.<br> Nosso estúdio é projetado para proporcionar uma experiência única, com sala climatizada e isolamento acústico de alta qualidade, com uma atmosfera criativa que inspira músicos a alcançarem seu melhor som. 
 
@@ -87,20 +96,19 @@
         </div>
     </section>
 
-    </main>
+</main>
         
-    <div class="faixa-estudio"></div>
-    <div class="container-botoes-estudio">
-    <nav class="menu-botoes-estudio">
-            <ul>
-                <li><a href="./producoes.html">Produções</a></li>
-                <li><a href="./estudio.html">O Estúdio</a></li>
-                <li><a href="./localizacao.html">Localização</a></li>
-                <li><a href="./contato.html">Contato</a></li>
-            </ul>
-        </nav>
+    <div class="container-botoes-producoes">
+            <nav class="menu-botoes">
+                <ul>
+                    <li><a href="./producoes.html">PRODUÇÕES</a></li>
+                    <li><a href="./estudio.html">ESTÚDIO</a></li>
+                    <li><a href="./localizacao.html">LOCALIZAÇÃO</a></li>
+                    <li><a href="./contato.html">CONTATO</a></li>
+                </ul>
+            </nav>
+    </div>
 
-</div>
 
 
 
