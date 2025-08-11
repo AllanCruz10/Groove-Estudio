@@ -89,7 +89,7 @@
 
   /* SEÇÃO BOTÕES DA HOME */
   .container-botoes-index {
-    height: 400px;                 /* reduz para caber no mobile */
+    height:auto;                 /* reduz para caber no mobile */
     background-size:cover;
     background-repeat: no-repeat;
     background-position: center;   /* ajusta o foco da arte */
@@ -120,8 +120,7 @@
     justify-content: center;
     padding: 10px 8px;
     border-radius: 10px;
-    background-color: #934d0c00;  /* leve fundo pra parecer botão */
-    box-shadow: rgba(0,0,0,0.12) 0 4px 10px;
+    
   }
 
   /* GALERIA/IFRAME (outras páginas) */
