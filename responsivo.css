@@ -56,6 +56,10 @@
   transform: scale(0.8); /* 90% do tamanho original */
    /* mantém alinhado ao logo */
   }
+ 
+  .container-agenda a {
+    width: 16rem;
+  }
 
   .social-container-header {
     display: none;
@@ -121,28 +125,25 @@ main {
 
   /* Grade 2x2 para os 4 links */
   .menu-botoes ul {
+    flex-wrap: wrap;
     display: flex;
-    width: 90%;
     align-items: center;
     justify-content: center;
     max-width: 520px;
-    margin-top: -15px;
+    padding-bottom: 7rem;
+    
     
   }
 
   .menu-botoes li { 
-    font-size: 15px; 
+    font-size: 12.3px; 
     font-weight: 600;
-    padding-bottom: 85px;
   }
   
   .menu-botoes a {
     justify-content: center;
     padding: 10px 8px;
 
-    
-    
-    
   }
 
   /* GALERIA/IFRAME (outras páginas) */
