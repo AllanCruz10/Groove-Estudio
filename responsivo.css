@@ -118,24 +118,21 @@
 
   }
 
-main {
-  background-image: url(./assets/main-fundo4.png);
-  height:auto;
-}
 
-.main-producoes {
-  background-image: url(./assets/main-fundo4.png);
-  height:auto;
-}
+  main {
+    background-image: url(./assets/banner.png);
+    background-size: cover;
+    height: 460px;
+    
+  }
+
+  main
 
 
   /* SEÇÃO BOTÕES DA HOME */
   .container-botoes-index {
-    height:auto;                 /* reduz para caber no mobile */
-    background-size:160vw;
-    background-repeat: no-repeat;
-    background-position:top;
-       /* ajusta o foco da arte */
+    display: none;
+
   }
 
   .container-botoes-producoes {
@@ -166,6 +163,10 @@ main {
 
   .titulo-groove {
     font-size: 2rem;
+  }
+
+  .titulo-groove-local {
+    font-size: 1.8rem;
   }
 
   .descricao-producoes {
