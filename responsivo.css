@@ -126,8 +126,15 @@
     
   }
 
-  main
+  .main-producoes {
+    height: auto;
+  }
 
+  .main-estudio {
+    height: auto;
+  }
+
+  
 
   /* SEÇÃO BOTÕES DA HOME */
   .container-botoes-index {
