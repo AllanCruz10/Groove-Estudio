@@ -122,7 +122,7 @@
   main {
     background-image: url(./assets/banner.png);
     background-size: cover;
-    height: 520px;
+    height: 550px;
     
   }
 
@@ -219,20 +219,21 @@
   .background-footer {
     min-height: unset;
   }
-  .logo-footer { width: 160px; }
+  .logo-footer { width: 160px; margin-top: -20px; }
   .social_container {
     transform: none;
     gap: 18px;
-    font-size: 20px;
-    margin: 8px 0 0 0;
+    font-size: 30px;
+    margin-top: -45px;
   }
   .span-footer,
   .desenvolvido {
     font-size: 0.85rem;
     text-align: center;
-    padding: 4px 12px;
+    padding: 5px;
   }
 
+ body.menu-aberto .container-agenda { opacity: 0; pointer-events: none; transition: opacity .2s; }
 
 
 }
