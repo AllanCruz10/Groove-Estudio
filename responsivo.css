@@ -114,7 +114,7 @@
 
   .background {
     z-index: 1150;     /* acima do conteúdo, abaixo do menu */
-    background-color: rgba(0,0,0,.5);
+    background-color: rgba(0, 0, 0, 0.7);
 
   }
 
