@@ -120,11 +120,32 @@
 
 
   main {
-    background-image: url(./assets/banner.png);
+    background-image: url(./assets/banner3.png);
     background-size: cover;
-    height: 550px;
+    height: auto;
     
   }
+
+  .container-resp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 13rem;
+  }
+
+  .container-resp img {
+    height: auto;
+    width: 9.2rem;
+  }
+
+  .titulo-resp {
+    font-family: "Rock Salt", cursive;
+    font-size: 1.3rem;
+    color:#000102;
+  }
+
+  
 
   .main-producoes {
     height: auto;
