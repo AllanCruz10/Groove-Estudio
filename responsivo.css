@@ -190,11 +190,12 @@
   }
 
   .titulo-groove {
-    font-size: 2rem;
+    font-size: 1.3rem;
+    margin-bottom: 18px;
   }
 
   .titulo-groove-local {
-    font-size: 1.8rem;
+    font-size: 1.3rem;
   }
 
   .descricao-producoes {
@@ -251,7 +252,7 @@
   .desenvolvido {
     font-size: 0.85rem;
     text-align: center;
-    padding: 5px;
+    padding: 3px;
   }
 
  body.menu-aberto .container-agenda { opacity: 0; pointer-events: none; transition: opacity .2s; }
