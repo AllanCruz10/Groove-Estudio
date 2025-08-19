@@ -7,6 +7,7 @@
     overflow-x: hidden;        /* evita scroll lateral */
   }
 
+
   :root {
     --primary-color: #da7223ac;
     --secondary-color: #703b09;
@@ -14,6 +15,12 @@
     --text-secondary-color: #000f1f;
     --background-color: #e1c8b24d;
     --logo-color:#dec6af;
+}
+
+body.menu-aberto .logo {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .2s;
 }
 
    .body-index {
@@ -132,6 +139,10 @@
     justify-content: center;
     flex-direction: column;
     padding-top: 13rem;
+  }
+
+  .container-resp a {
+    text-decoration: none;
   }
 
   .container-resp img {
